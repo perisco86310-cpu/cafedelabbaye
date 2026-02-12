@@ -18,7 +18,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-gold font-body tracking-[0.3em] uppercase text-sm mb-6"
         >
-          Saint-Riquier
+          Saint-Savin · Vienne (86)
         </motion.p>
 
         <motion.h1
@@ -27,7 +27,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl text-cream text-shadow-hero italic mb-6"
         >
-          Café de L'Abbaye
+          Café de l'Abbaye
         </motion.h1>
 
         <motion.p
@@ -36,9 +36,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-cream/80 text-lg md:text-xl font-light max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Le café restaurant incontournable de Saint-Riquier.
+          Bar · Restaurant · Hôtel · PMU
           <br />
-          Cuisine traditionnelle, en salle ou en terrasse, dans une ambiance chaleureuse.
+          Une ambiance bistrot conviviale, sans chichi, sur la place de la Libération.
         </motion.p>
 
         <motion.div
@@ -48,18 +48,18 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="tel:0322288114"
+            href="tel:+33549480083"
             className="flex items-center gap-3 px-8 py-4 gold-gradient text-primary-foreground font-semibold rounded-sm hover:opacity-90 transition-opacity"
           >
             <Phone className="w-5 h-5" />
-            03 22 28 81 14
+            05 49 48 00 83
           </a>
           <a
             href="#contact"
             className="flex items-center gap-3 px-8 py-4 border border-gold text-gold font-semibold rounded-sm hover:bg-gold/10 transition-colors"
           >
             <Mail className="w-5 h-5" />
-            Contactez-nous
+            Nous trouver
           </a>
         </motion.div>
       </div>

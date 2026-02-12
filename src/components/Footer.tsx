@@ -6,10 +6,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <p className="font-display text-xl italic text-gold mb-1">
-            Café de L'Abbaye
+            Café de l'Abbaye
           </p>
           <p className="text-muted-foreground text-sm font-body">
-            Saint-Riquier · 03 22 28 81 14
+            48 Place de la Libération · 86310 Saint-Savin · 05 49 48 00 83
           </p>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <p className="text-muted-foreground text-xs font-body">
-          © {new Date().getFullYear()} Café de L'Abbaye. Tous droits réservés.
+          © {new Date().getFullYear()} Café de l'Abbaye. Tous droits réservés.
         </p>
       </div>
     </footer>

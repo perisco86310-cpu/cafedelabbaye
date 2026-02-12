@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { UtensilsCrossed, Beer, PartyPopper, Ticket } from "lucide-react";
+import { UtensilsCrossed, Beer, Bed, Tv } from "lucide-react";
 import barImage from "@/assets/bar.jpg";
 import eventsImage from "@/assets/events.jpg";
 import cuisineImage from "@/assets/cuisine.jpg";
@@ -9,28 +9,28 @@ const services = [
     icon: UtensilsCrossed,
     title: "Restaurant",
     description:
-      "Cuisine traditionnelle avec des produits régionaux. 3 formules du jour en semaine et une carte complète.",
+      "Plat du jour, carte renouvelée chaque mois, burgers gourmands et saveurs du Sud. Menus de 11 à 22 €.",
     image: cuisineImage,
   },
   {
     icon: Beer,
     title: "Bar",
     description:
-      "Un large choix de bières pression artisanales et une sélection de boissons dans une ambiance conviviale.",
+      "Vins corses et du Sud au verre, planches de charcuteries de Bastelica, café du matin entre habitués.",
     image: barImage,
   },
   {
-    icon: PartyPopper,
-    title: "Événements",
+    icon: Bed,
+    title: "Hôtel",
     description:
-      "Repas de groupe et séminaires sur réservation. Notre équipe organise votre événement sur mesure.",
+      "Chambres confortables pour vos séjours à Saint-Savin, au cœur du village, à deux pas de l'abbaye classée UNESCO.",
     image: eventsImage,
   },
   {
-    icon: Ticket,
-    title: "PMU & FDJ",
+    icon: Tv,
+    title: "PMU & Courses",
     description:
-      "Espace dédié aux courses hippiques et jeux de loterie. Venez tenter votre chance dans une ambiance conviviale.",
+      "Salle dédiée avec écran Équidia pour suivre les courses hippiques dans une ambiance joyeuse et animée.",
     image: barImage,
   },
 ];
@@ -47,10 +47,10 @@ const Services = () => {
           className="text-center mb-16"
         >
           <p className="text-gold tracking-[0.2em] uppercase text-sm mb-4 font-body">
-            Ce que nous proposons
+            Tout sous un même toit
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-cream">
-            Découvrez nos services
+            Nos services
           </h2>
         </motion.div>
 
