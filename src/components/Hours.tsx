@@ -19,7 +19,7 @@ const Hours = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Été */}
+          {/* Bar */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,37 +27,31 @@ const Hours = () => {
             transition={{ duration: 0.6 }}
             className="bg-card rounded-sm p-8 border border-border"
           >
-            <h3 className="font-display text-2xl text-gold mb-6">
-              Horaires d'été
-            </h3>
-            <p className="text-muted-foreground text-xs mb-4 font-body">
-              Du mercredi 28 mai au dimanche 14 septembre
-            </p>
-
-            <div className="space-y-4">
-              <div>
-                <h4 className="text-cream font-semibold mb-2 font-body text-sm uppercase tracking-wider">
-                  Bar
-                </h4>
-                <p className="text-muted-foreground font-body text-sm">
-                  Tous les jours de 8h à 22h
-                </p>
-                <p className="text-muted-foreground font-body text-sm">
-                  Fermeture à 1h le vendredi
-                </p>
-              </div>
-              <div className="border-t border-border pt-4">
-                <h4 className="text-cream font-semibold mb-2 font-body text-sm uppercase tracking-wider">
-                  Restaurant
-                </h4>
-                <p className="text-muted-foreground font-body text-sm">
-                  Tous les jours : 12h–14h et 19h–21h
-                </p>
-              </div>
+            <h3 className="font-display text-2xl text-gold mb-6">Bar</h3>
+            <div className="space-y-3">
+              {[
+                { day: "Lundi", hours: "08h00 – 15h00" },
+                { day: "Mardi", hours: "08h00 – 20h00" },
+                { day: "Mercredi", hours: "08h00 – 20h00" },
+                { day: "Jeudi", hours: "08h00 – 20h00" },
+                { day: "Vendredi", hours: "08h00 – 23h00" },
+                { day: "Samedi", hours: "08h30 – 23h00" },
+                { day: "Dimanche", hours: "08h30 – 15h00" },
+              ].map((item) => (
+                <div
+                  key={item.day}
+                  className="flex justify-between items-center py-2 border-b border-border last:border-0"
+                >
+                  <span className="text-cream font-body text-sm">{item.day}</span>
+                  <span className="text-muted-foreground font-body text-sm">
+                    {item.hours}
+                  </span>
+                </div>
+              ))}
             </div>
           </motion.div>
 
-          {/* Hiver */}
+          {/* Restaurant */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -65,37 +59,33 @@ const Hours = () => {
             transition={{ duration: 0.6 }}
             className="bg-card rounded-sm p-8 border border-border"
           >
-            <h3 className="font-display text-2xl text-gold mb-6">
-              Horaires d'hiver
-            </h3>
-            <p className="text-muted-foreground text-xs mb-4 font-body">
-              Hors période estivale
-            </p>
-
-            <div className="space-y-4">
+            <h3 className="font-display text-2xl text-gold mb-6">Restaurant</h3>
+            <div className="space-y-6">
               <div>
-                <h4 className="text-cream font-semibold mb-2 font-body text-sm uppercase tracking-wider">
-                  Bar
+                <h4 className="text-cream font-semibold mb-3 font-body text-sm uppercase tracking-wider">
+                  Brasserie le midi
                 </h4>
                 <p className="text-muted-foreground font-body text-sm">
-                  Lundi : 10h – 14h30
+                  Du mardi au vendredi
                 </p>
                 <p className="text-muted-foreground font-body text-sm">
-                  Mardi au Samedi : 8h – 20h
-                </p>
-                <p className="text-muted-foreground font-body text-sm">
-                  Dimanche : 8h – 19h
+                  Service de 12h à 14h
                 </p>
               </div>
               <div className="border-t border-border pt-4">
-                <h4 className="text-cream font-semibold mb-2 font-body text-sm uppercase tracking-wider">
-                  Restaurant
+                <h4 className="text-cream font-semibold mb-3 font-body text-sm uppercase tracking-wider">
+                  À venir – Mars 2026
                 </h4>
                 <p className="text-muted-foreground font-body text-sm">
-                  Tous les midis : 12h – 14h
+                  Service midi et soir, 7j/7
                 </p>
+              </div>
+              <div className="border-t border-border pt-4">
+                <h4 className="text-cream font-semibold mb-3 font-body text-sm uppercase tracking-wider">
+                  Groupes & Autocars
+                </h4>
                 <p className="text-muted-foreground font-body text-sm">
-                  Vendredi et Samedi soir : 19h – 21h
+                  Accueil sur réservation — jusqu'à 52 couverts en salle
                 </p>
               </div>
             </div>

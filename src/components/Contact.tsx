@@ -16,11 +16,11 @@ const Contact = () => {
             Nous retrouver
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-4">
-            Contactez-nous
+            Venez nous voir
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto font-body">
-            Pour toute demande de renseignement ou réservation, le Café de l'Abbaye
-            à Saint-Riquier est à votre écoute.
+            Pour toute réservation ou renseignement, n'hésitez pas à nous appeler.
+            Nous vous accueillons avec le sourire, place de la Libération à Saint-Savin.
           </p>
         </motion.div>
 
@@ -35,10 +35,10 @@ const Contact = () => {
             <Phone className="w-8 h-8 text-gold mx-auto mb-4" />
             <h3 className="font-display text-lg text-cream mb-2">Téléphone</h3>
             <a
-              href="tel:0322288114"
+              href="tel:+33549480083"
               className="text-muted-foreground hover:text-gold transition-colors font-body"
             >
-              03 22 28 81 14
+              05 49 48 00 83
             </a>
           </motion.div>
 
@@ -52,9 +52,9 @@ const Contact = () => {
             <MapPin className="w-8 h-8 text-gold mx-auto mb-4" />
             <h3 className="font-display text-lg text-cream mb-2">Adresse</h3>
             <p className="text-muted-foreground font-body text-sm">
-              Place de l'Abbaye
+              48 Place de la Libération
               <br />
-              80135 Saint-Riquier
+              86310 Saint-Savin
             </p>
           </motion.div>
 
@@ -68,9 +68,9 @@ const Contact = () => {
             <CreditCard className="w-8 h-8 text-gold mx-auto mb-4" />
             <h3 className="font-display text-lg text-cream mb-2">Paiement</h3>
             <p className="text-muted-foreground font-body text-sm">
-              CB · Espèces · Chèques vacances
+              CB · Mastercard · Visa
               <br />
-              Chèques de table · Chèques bancaires
+              Chèques vacances · Espèces
             </p>
           </motion.div>
         </div>
@@ -84,8 +84,8 @@ const Contact = () => {
           className="rounded-sm overflow-hidden border border-border"
         >
           <iframe
-            title="Localisation Café de l'Abbaye"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.5!2d1.945!3d50.134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd57e90c8dec43%3A0xcf6baf4c84ea8f0!2sCaf%C3%A9%20de%20l'Abbaye!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+            title="Localisation Café de l'Abbaye — Saint-Savin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.0!2d0.8645!3d46.5640!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fdbe8e8e8e8e8e%3A0x0!2s48+Place+de+la+Lib%C3%A9ration%2C+86310+Saint-Savin!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
             width="100%"
             height="350"
             style={{ border: 0 }}
