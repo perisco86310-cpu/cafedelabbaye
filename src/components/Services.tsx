@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { UtensilsCrossed, Beer, Bed, Tv } from "lucide-react";
 import barImage from "@/assets/bar.jpg";
-import eventsImage from "@/assets/events.jpg";
+import hotelImage from "@/assets/hotel-room.jpg";
 import cuisineImage from "@/assets/cuisine.jpg";
 import pmuImage from "@/assets/pmu.jpg";
 
@@ -25,7 +25,7 @@ const services = [
     title: "Hôtel",
     description:
       "Chambres confortables pour vos séjours à Saint-Savin, au cœur du village, à deux pas de l'abbaye classée UNESCO.",
-    image: eventsImage,
+    image: hotelImage,
   },
   {
     icon: Tv,
