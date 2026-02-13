@@ -3,6 +3,7 @@ import { UtensilsCrossed, Beer, Bed, Tv } from "lucide-react";
 import barImage from "@/assets/bar.jpg";
 import eventsImage from "@/assets/events.jpg";
 import cuisineImage from "@/assets/cuisine.jpg";
+import pmuImage from "@/assets/pmu.jpg";
 
 const services = [
   {
@@ -31,7 +32,7 @@ const services = [
     title: "PMU & Courses",
     description:
       "Salle dédiée avec écran Équidia pour suivre les courses hippiques dans une ambiance joyeuse et animée.",
-    image: barImage,
+    image: pmuImage,
   },
 ];
 
