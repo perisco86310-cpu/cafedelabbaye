@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 
 const About = lazy(() => import("@/components/About"));
 const Services = lazy(() => import("@/components/Services"));
+const Gallery = lazy(() => import("@/components/Gallery"));
 const Hours = lazy(() => import("@/components/Hours"));
 const Contact = lazy(() => import("@/components/Contact"));
 const Footer = lazy(() => import("@/components/Footer"));
@@ -24,6 +25,9 @@ const Index = () => {
       </Suspense>
       <Suspense fallback={<SectionLoader />}>
         <Services />
+      </Suspense>
+      <Suspense fallback={<SectionLoader />}>
+        <Gallery />
       </Suspense>
       <Suspense fallback={<SectionLoader />}>
         <Hours />
