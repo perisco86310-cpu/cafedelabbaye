@@ -3,8 +3,8 @@ import burger1 from "@/assets/burger-1.jpg.asset.json";
 import burger2 from "@/assets/burger-2.jpg.asset.json";
 
 const photos = [
-  { src: burger1.url, alt: "Pan bagnat maison et frites fraîches — Café de l'Abbaye" },
   { src: burger2.url, alt: "Pan bagnat servi sur planche en bois — Café de l'Abbaye" },
+  { src: burger1.url, alt: "Pan bagnat maison et frites fraîches — Café de l'Abbaye" },
 ];
 
 const Gallery = () => {
