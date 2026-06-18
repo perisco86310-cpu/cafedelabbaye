@@ -3,8 +3,8 @@ import burger1 from "@/assets/burger-1.jpg.asset.json";
 import burger2 from "@/assets/burger-2.jpg.asset.json";
 
 const photos = [
-  { src: burger1.url, alt: "Burger maison et frites fraîches — Café de l'Abbaye" },
-  { src: burger2.url, alt: "Burger gourmand servi sur planche en bois — Café de l'Abbaye" },
+  { src: burger1.url, alt: "Pan bagnat maison et frites fraîches — Café de l'Abbaye" },
+  { src: burger2.url, alt: "Pan bagnat servi sur planche en bois — Café de l'Abbaye" },
 ];
 
 const Gallery = () => {
@@ -19,10 +19,10 @@ const Gallery = () => {
           className="text-center mb-16"
         >
           <p className="text-gold tracking-[0.2em] uppercase text-sm mb-4 font-body">
-            Fait maison
+            Spécialité du Sud
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-cream mb-4">
-            Nos burgers gourmands
+            Nos pan bagnat
           </h2>
           <div className="w-16 h-[2px] bg-gold/40 mx-auto" />
         </motion.div>
