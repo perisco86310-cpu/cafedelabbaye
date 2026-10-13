@@ -117,8 +117,8 @@
   .leaf {
     position: absolute;
     top: 0;
-    width: calc(1.15rem * var(--leaf-scale));
-    height: calc(1.15rem * var(--leaf-scale));
+    width: calc(1.7rem * var(--leaf-scale));
+    height: calc(1.7rem * var(--leaf-scale));
     opacity: 0;
     will-change: transform, opacity;
     animation: leaf-fall var(--leaf-fall) linear infinite;
