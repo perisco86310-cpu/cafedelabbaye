@@ -52,6 +52,11 @@
     --warm-dark: 30 15% 7%;
     --warm-dark-light: 30 12% 12%;
     --warm-brown: 25 20% 25%;
+
+    /* Autumn palette (feuillage de la page d'accueil) */
+    --autumn-amber: 30 65% 48%;
+    --autumn-honey: 42 72% 62%;
+    --autumn-rust: 18 55% 45%;
   }
 }
 
@@ -106,5 +111,91 @@
       rgba(0,0,0,0.6) 50%,
       rgba(0,0,0,0.8) 100%
     );
+  }
+
+  /* Feuilles d'automne du bandeau d'accueil */
+  .leaf {
+    position: absolute;
+    top: 0;
+    width: calc(1.7rem * var(--leaf-scale));
+    height: calc(1.7rem * var(--leaf-scale));
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: leaf-fall var(--leaf-fall) linear infinite;
+    animation-delay: var(--leaf-delay);
+  }
+
+  .leaf-sway {
+    display: block;
+    width: 100%;
+    height: 100%;
+    animation: leaf-sway var(--leaf-sway-time) ease-in-out infinite;
+    animation-delay: var(--leaf-delay);
+  }
+
+  .leaf-spin {
+    display: block;
+    width: 100%;
+    height: 100%;
+    animation: leaf-spin var(--leaf-spin-time) linear infinite;
+    animation-delay: var(--leaf-delay);
+  }
+
+  .leaf-spin svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: blur(var(--leaf-blur));
+  }
+}
+
+@keyframes leaf-fall {
+  0% {
+    transform: translate3d(0, -14vh, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--leaf-opacity);
+  }
+  86% {
+    opacity: var(--leaf-opacity);
+  }
+  100% {
+    transform: translate3d(0, 118vh, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes leaf-sway {
+  0%,
+  100% {
+    transform: translate3d(calc(var(--leaf-sway) * -1), 0, 0);
+  }
+  50% {
+    transform: translate3d(var(--leaf-sway), 0, 0);
+  }
+}
+
+@keyframes leaf-spin {
+  0% {
+    transform: rotate(0deg) rotateY(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) rotateY(55deg) scale(0.94);
+  }
+  50% {
+    transform: rotate(180deg) rotateY(0deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) rotateY(-55deg) scale(0.94);
+  }
+  100% {
+    transform: rotate(360deg) rotateY(0deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leaf {
+    display: none;
   }
 }

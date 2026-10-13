@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Phone, Mail, ChevronDown } from "lucide-react";
 import heroImage from "@/assets/hero-cafe.jpg";
+import AutumnLeaves from "@/components/AutumnLeaves";
 import { useRef } from "react";
 
 const Hero = () => {
@@ -19,6 +20,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroImage})`, y: bgY }}
       />
       <div className="absolute inset-0 hero-overlay" />
+      <AutumnLeaves />
 
       <motion.div style={{ opacity }} className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <motion.p
