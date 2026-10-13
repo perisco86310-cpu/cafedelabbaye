@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Clock } from "lucide-react";
 
 const barHours = [
-  { day: "Lundi", hours: "08h00 – 15h00" },
+  { day: "Lundi", hours: "08h00 – 12h00" },
   { day: "Mardi", hours: "08h00 – 20h00" },
   { day: "Mercredi", hours: "08h00 – 20h00" },
   { day: "Jeudi", hours: "08h00 – 20h00" },
