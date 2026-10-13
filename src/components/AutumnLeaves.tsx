@@ -40,7 +40,7 @@ const SHAPES = [
   <svg viewBox="0 0 24 24" key="peuplier" aria-hidden="true">
     <path
       fill="currentColor"
-      d="M12 1.2c3.5 5 4.3 11.4 2 17-.7 1.7-1.3 3-2 4.3-.7-1.3-1.3-2.6-2-4.3-2.3-5.6-1.5-12 2-17Z"
+      d="M12 1.4c4.6 4.8 5.6 11.2 3.1 16.8-.8 1.9-1.6 3.3-3.1 4.6-1.5-1.3-2.3-2.7-3.1-4.6C6.4 12.6 7.4 6.2 12 1.4Z"
     />
     <g stroke="hsl(var(--warm-dark))" strokeWidth="0.8" strokeLinecap="round" fill="none" opacity="0.5">
       <path d="M12 4.5v16" />
