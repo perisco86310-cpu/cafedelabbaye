@@ -54,6 +54,9 @@ export default {
         gold: "hsl(var(--gold))",
         "gold-light": "hsl(var(--gold-light))",
         cream: "hsl(var(--cream))",
+        "autumn-amber": "hsl(var(--autumn-amber))",
+        "autumn-honey": "hsl(var(--autumn-honey))",
+        "autumn-rust": "hsl(var(--autumn-rust))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
