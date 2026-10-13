@@ -180,11 +180,17 @@
   0% {
     transform: rotate(0deg) rotateY(0deg) scale(1);
   }
+  25% {
+    transform: rotate(90deg) rotateY(55deg) scale(0.94);
+  }
   50% {
-    transform: rotate(180deg) rotateY(180deg) scale(0.9);
+    transform: rotate(180deg) rotateY(0deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) rotateY(-55deg) scale(0.94);
   }
   100% {
-    transform: rotate(360deg) rotateY(360deg) scale(1);
+    transform: rotate(360deg) rotateY(0deg) scale(1);
   }
 }
 
